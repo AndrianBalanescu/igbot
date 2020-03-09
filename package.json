@@ -1,0 +1,193 @@
+{
+  "_from": "@social-manager-tools/igbot@latest",
+  "_id": "@social-manager-tools/igbot@0.9.19",
+  "_inBundle": false,
+  "_integrity": "sha512-0/cuKHm3t1ahQD1d/VAURB9NStsa2qfWb8AlpHBy16fC82O2f5YqMMASfi0sfL0cVf1xpAR1O8NA8gRJCvFy2Q==",
+  "_location": "/@social-manager-tools/igbot",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@social-manager-tools/igbot@latest",
+    "name": "@social-manager-tools/igbot",
+    "escapedName": "@social-manager-tools%2figbot",
+    "scope": "@social-manager-tools",
+    "rawSpec": "latest",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@social-manager-tools/igbot/-/igbot-0.9.19.tgz",
+  "_shasum": "5b7296eaffa9593bf004a6747c60b407ef7c9265",
+  "_spec": "@social-manager-tools/igbot@latest",
+  "_where": "/home/motorockstar/Desktop/222/1/333",
+  "author": {
+    "name": "Patryk Rzucidło [@ptkdev]",
+    "email": "support@ptkdev.io",
+    "url": "https://ptk.dev"
+  },
+  "bugs": {
+    "url": "https://github.com/social-manager-tools/socialmanagertools-igbot/issues"
+  },
+  "bundleDependencies": false,
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/social-manager-tools"
+  },
+  "contributors": [
+    {
+      "name": "Massimo [@maXfer75]",
+      "email": "maxfer75@hotmail.com",
+      "url": "https://instagram.com/maXfer75"
+    },
+    {
+      "name": "Gaetano [@TaniK72]",
+      "email": "tanik1972@gmail.com",
+      "url": "https://instagram.com/TaniK72"
+    },
+    {
+      "name": "Ilua Chubarov [@Ilya]",
+      "email": "agoalofalife@gmail.com",
+      "url": "https://github.com/agoalofalife"
+    },
+    {
+      "name": "Julian Xhokaxhiu [@julianxhokaxhiu]",
+      "url": "https://github.com/julianxhokaxhiu"
+    },
+    {
+      "name": "lecoueyl [@lecoueyl]",
+      "url": "https://github.com/lecoueyl"
+    },
+    {
+      "name": "Lollymouth [@lollymouth]",
+      "url": "https://github.com/lollymouth"
+    },
+    {
+      "name": "roNn23 [@roNn23]",
+      "url": "https://github.com/roNn23"
+    },
+    {
+      "name": "Andrea [@m0s4ik]",
+      "url": "https://github.com/m0s4ik"
+    },
+    {
+      "name": "trungpv1601 [@_trungpv]",
+      "url": "https://github.com/trungpv1601"
+    },
+    {
+      "name": "Ermolaev-Nikolay [@Ermolaev-Nikolay]",
+      "url": "https://github.com/Ermolaev-Nikolay"
+    }
+  ],
+  "dependencies": {
+    "colors": "latest",
+    "compare-versions": "latest",
+    "path": "latest",
+    "puppeteer": "1.19.0",
+    "request": "latest",
+    "sqlite3": "latest"
+  },
+  "deprecated": false,
+  "description": "Social Manager Tools: Instagram Bot API",
+  "devDependencies": {
+    "all-contributors-cli": "latest",
+    "chai": "latest",
+    "eslint": "latest",
+    "eslint-config-standard": "latest",
+    "eslint-plugin-html": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-jest": "latest",
+    "eslint-plugin-jsdoc": "latest",
+    "eslint-plugin-node": "latest",
+    "eslint-plugin-promise": "latest",
+    "eslint-plugin-snakecasejs": "latest",
+    "eslint-plugin-standard": "latest",
+    "husky": "latest",
+    "jest": "latest",
+    "json": "latest",
+    "markserv": "latest",
+    "opencollective": "latest",
+    "opencollective-postinstall": "latest",
+    "pm2": "latest",
+    "yargs": "latest"
+  },
+  "docs": "https://docs.socialmanager.tools",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "homepage": "https://socialmanager.tools",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run contributors-generate"
+    }
+  },
+  "keywords": [
+    "bot",
+    "ptkdev",
+    "instagram",
+    "instagram-lib",
+    "instagram-api",
+    "instagram-bot",
+    "instagram-puppeteer",
+    "instapy",
+    "instabot",
+    "instagress",
+    "puppeteer",
+    "ninjalitics",
+    "socialads",
+    "socialblade",
+    "selenium",
+    "webdriverio"
+  ],
+  "license": "MIT",
+  "license-docs": "CC BY 4.0",
+  "license-images": "CC BY-NC 4.0",
+  "main": "lib.js",
+  "name": "@social-manager-tools/igbot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/social-manager-tools/socialmanagertools-igbot.git"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules package-lock.json && npm install",
+    "contributors-generate": "all-contributors generate",
+    "devpostinstall": "npm run docs-init && npm run contributors-generate && npm run docker-fix && opencollective-postinstall",
+    "docker-fix": "chmod +x docker/armv7/* && chmod +x docker/armv8/*",
+    "docs": "git submodule update --recursive && markserv ./docs/README.md",
+    "docs-init": "git submodule add -f https://github.com/social-manager-tools/socialmanagertools-docs.git docs",
+    "git-ignore-reset": "git rm -r --cached . && git add . && git commit -m \"[Fix] Removing all files in .gitignore\"",
+    "git-postinstall": "npm run docs-init && npm run git-set-upstream && git-switch-nightly",
+    "git-pull": "git pull --recursive",
+    "git-pull-upstream": "git pull upstream master && git pull upstream beta && git pull upstream nightly",
+    "git-set-upstream": "git remote add upstream git@github.com:social-manager-tools/socialmanagertools-igbot.git && git fetch upstream",
+    "git-switch-beta": "git checkout beta && git submodule update --init --recursive && git pull --recursive",
+    "git-switch-master": "git checkout master && git submodule update --init --recursive && git pull --recursive",
+    "git-switch-nightly": "git checkout nightly && git submodule update --init --recursive && git pull --recursive",
+    "lint": "eslint ./ --cache --ignore-pattern .gitignore",
+    "lint-fix": "eslint ./ --cache --ignore-pattern .gitignore --fix",
+    "npm-publish-beta": "git checkout beta && npm publish --tag beta",
+    "npm-publish-master-chromev68": "git checkout master && json -I -f package.json -e 'this.dependencies.puppeteer=\"1.4.0\"' && npm publish --tag chromev68",
+    "npm-publish-master-chromev69": "git checkout master && json -I -f package.json -e 'this.dependencies.puppeteer=\"1.6.2\"' && npm publish --tag chromev69",
+    "npm-publish-master-chromev70": "git checkout master && json -I -f package.json -e 'this.dependencies.puppeteer=\"1.7.0\"' && npm publish --tag chromev70",
+    "npm-publish-master-chromev71": "git checkout master && json -I -f package.json -e 'this.dependencies.puppeteer=\"1.9.0\"' && npm publish --tag chromev71",
+    "npm-publish-master-chromev72": "git checkout master && json -I -f package.json -e 'this.dependencies.puppeteer=\"1.11.0\"' && npm publish --tag chromev72",
+    "npm-publish-master-chromev73": "git checkout master && json -I -f package.json -e 'this.dependencies.puppeteer=\"1.12.2\"' && npm publish --tag chromev73",
+    "npm-publish-master-chromev74": "git checkout master && json -I -f package.json -e 'this.dependencies.puppeteer=\"1.13.0\"' && npm publish --tag chromev75",
+    "npm-publish-master-chromev75": "git checkout master && json -I -f package.json -e 'this.dependencies.puppeteer=\"1.15.0\"' && npm publish --tag chromev76",
+    "npm-publish-master-chromev76": "git checkout master && json -I -f package.json -e 'this.dependencies.puppeteer=\"1.17.0\"' && npm publish --tag chromev77",
+    "npm-publish-master-chromev77": "git checkout master && json -I -f package.json -e 'this.dependencies.puppeteer=\"1.19.0\"' && npm publish --tag chromev78",
+    "npm-publish-master-chromev78": "git checkout master && json -I -f package.json -e 'this.dependencies.puppeteer=\"1.20.0\"' && npm publish --tag chromev79",
+    "npm-publish-master-latest": "git checkout master && json -I -f package.json -e 'this.dependencies.puppeteer=\"latest\"' && npm publish",
+    "npm-publish-nightly": "git checkout nightly && npm publish --tag nightly",
+    "start": "node bot.js --config=\"./configs/config.js\"",
+    "start-pm2": "pm2 start .pm2-process.json",
+    "stop": "killall node",
+    "stop-pm2": "pm2 stop .pm2-process.json",
+    "test": "jest",
+    "update": "rm -f package-lock.json && npm update"
+  },
+  "version": "0.9.19"
+}
